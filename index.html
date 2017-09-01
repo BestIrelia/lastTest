@@ -3,13 +3,43 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>test</title>
-   
+   	<style>
+        body{
+            padding:0;
+            margin:0;
+        }
+        .left{
+            float: left;
+            width:100px;
+            height:200px;
+            background: #aaf;
+        }
+        .right{
+            float: right;
+            width:100px;
+            height:200px;
+            background: #faa;
+        }
+        .mid{
+            /*margin:0 100px;*/
+            overflow: hidden;
+            height:200px;
+            background: #afa;
+        }
+    </style>
 </head>
 <body >
-	<h1>右侧div自适应</h1>
-	<h1>git</h1>
+		<h1>右侧div自适应</h1>
+		<h1>git</h1>
     <div style="background:#aaf;float:left;width:100px;height:200px"></div>
     <div style="margin-left:100px;background:#faa;height:600px"></div>
+
+    <h1>左右两侧div宽度固定，中间div自适应</h1>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="mid">4444444444444</div>
+    </div>
     <script>
     
     </script>
